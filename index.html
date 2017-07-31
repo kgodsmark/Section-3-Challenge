@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>Section 3 Challenge</title>
+	<link rel='stylesheet' href='css/styles.css' />
+</head>
+
+<body> 
+
+<h1>Hello World</h1>
+
+<p style="text-align: center">
+  <img src="https://www.quickbooks.co.uk/etc/designs/harmony/images/favicon/quickbooks/apple-touch-icon-196x196.png" style="position: relative">
+</p>
+<script>
+  var cat = document.querySelector("img");
+  var angle = 0, lastTime = null;
+  function animate(time) {
+    if (lastTime != null)
+      angle += (time - lastTime) * 0.001;
+    lastTime = time;
+    cat.style.top = (Math.sin(angle) * 45) + "px";
+    cat.style.left = (Math.cos(angle) * 100) + "px";
+    requestAnimationFrame(animate);
+  }
+  requestAnimationFrame(animate);
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+<script src='js/main.js'></script>
+
+
+</body>
+</html>
