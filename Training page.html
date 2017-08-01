@@ -2,8 +2,8 @@
 
 <html>
 <head>
-	<meta charset='utf-8'/>
-	<title>Woodville Training</title>
+  <meta charset='utf-8'/>
+  <title>Woodville Training</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel='stylesheet' href='css/styles.css' />
@@ -38,29 +38,29 @@
 
 <section class="jumbotron">
   <div class="container">
-    <div class="row text-center">
-      <h2>Quickbooks online course</h2>
-      <p>Online bookkeeping training specialist</p>
+    <div class="row text-left">
+      <h2>Online Videos</h2>
+      <p>Learn at your own pace</p>
+      <iframe width="368" height="207" src="https://www.youtube.com/embed/Qyq5tULfuqQ" frameborder="0" allowfullscreen></iframe>
     </div>
-    <p style="text-align: center">
-      <img id="moving-image" src="https://www.quickbooks.co.uk/etc/designs/harmony/images/favicon/quickbooks/apple-touch-icon-196x196.png" style="position: relative">
-    </p>
-    <script>
-      var logo = document.querySelector("#moving-image");
-      var angle = 0, lastTime = null;
-      function animate(time) {
-        if (lastTime != null)
-        angle += (time - lastTime) * 0.001;
-        lastTime = time;
-        logo.style.top = (Math.sin(angle) * 20) + "px";
-        logo.style.left = (Math.cos(angle) * 20) + "px";
-        requestAnimationFrame(animate);
-      }
-      requestAnimationFrame(animate);
-    </script> 
   </div>
-  
-
+  <div class="container" style="background-color: #ffd54c;">
+    <div class="row text-left">
+    <a name="two"></a>
+      <h2>CLassroom Sessions</h2>
+      <p>Learn with other like-minded people</p>
+       <img width="368" height="207" src="images/classroom.png">
+     </div>
+  </div>
+    <div class="container">
+    <div class="row text-left">
+    <a name="three"></a>
+      <h2>One-to-One</h2>
+      <p>Bespoke dedicated tutoring</p>
+       <img width="368" height="207" src="images/tick.png">
+     </div>
+  </div>
+</section> 
 
 </section> 
   <div class="row text-center">
